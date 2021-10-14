@@ -7,9 +7,9 @@
 ///
 @function generate-mono($seed, $name: primary) {
     @return (inspect($name): $seed,
-            str-insert($name, --lighter, str-length($name) + 1): lighten($seed, 6%),
-            str-insert($name, --lightest, str-length($name) + 1): lighten($seed, 20%),
-            str-insert($name, --darker, str-length($name) + 1): darken($seed, 6%),
-            str-insert($name, --darkest, str-length($name) + 1): darken($seed, 20%));
+            str-insert($name, --lighter, str-length($name) + 1): lighten($seed, 12.5%),
+            str-insert($name, --lightest, str-length($name) + 1): lighten($seed, 25%),
+            str-insert($name, --darker, str-length($name) + 1): darken($seed, 12.5%),
+            str-insert($name, --darkest, str-length($name) + 1): darken($seed, 25%));
 }
 
